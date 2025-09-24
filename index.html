@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Trunfo — caiiofx</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Super Trunfo — caiiofx 🏆</h1>
+
+  <!-- Container dos jogadores -->
+  <div class="players">
+    <!-- Jogador A -->
+    <div class="player" id="playerA">
+      <strong>Jogador A</strong>
+      <div id="cardA" class="card"></div>
+      <p>Cartas na mão: <span id="handA">0</span></p>
+      <button onclick="chooseAttribute('A')">Escolher atributo (A)</button>
+    </div>
+
+    <!-- Centro (mesa e controle) -->
+    <div class="mesa">
+      <p>Turno atual: <span id="turno">Jogador A</span></p>
+      <button onclick="novaPartida()">Nova Partida</button>
+      <button onclick="proximoRound()">Próximo Round</button>
+
+      <div class="mesas-container">
+        <div>
+          <strong>Mesa A</strong>
+          <div id="mesaA" class="card"></div>
+        </div>
+        <div>
+          <strong>Mesa B</strong>
+          <div id="mesaB" class="card"></div>
+        </div>
+      </div>
+
+      <div class="log" id="log">Logs do jogo aparecerão aqui.</div>
+    </div>
+
+    <!-- Jogador B -->
+    <div class="player" id="playerB">
+      <strong>Jogador B</strong>
+      <div id="cardB" class="card"></div>
+      <p>Cartas na mão: <span id="handB">0</span></p>
+      <button onclick="chooseAttribute('B')">Escolher atributo (B)</button>
+    </div>
+  </div>
+
+  <p style="text-align:center; margin-top:20px; font-size:14px; opacity:0.8;">
+    Copie/edite as cartas no código para customizar
+  </p>
+
+  <script src="script.js"></script>
+</body>
+</html>
